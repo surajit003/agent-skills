@@ -22,8 +22,18 @@ Write Python so a reader can understand the main operation from top to bottom wi
 - Give each function one meaningful operational responsibility. Do not reduce functions to arbitrary line-count targets.
 - Keep decisions and side effects apparent in the main workflow.
 - Pass required values explicitly instead of relying on hidden mutable state.
+- Prefer positional arguments for required inputs when their meaning and order are clear from the function name and signature.
+- Use keyword arguments when they clarify optional settings, booleans, repeated primitive values, or otherwise ambiguous calls.
+- Avoid `*args` and `**kwargs` unless forwarding an existing compatible interface requires them.
 - Return a value with a clear meaning. Avoid modes controlled by several boolean flags.
 - Use early returns when they make exit conditions easier to see.
+
+## Write only useful docstrings
+
+- Omit a function or method docstring when its name, typed signature, and implementation already make its behavior clear.
+- When a docstring adds value, keep it short and explain what the operation does.
+- Include only material caveats, preconditions, side effects, or behavior that a reader cannot infer from the signature.
+- Do not repeat parameter names, return types, or implementation steps that the code already communicates.
 
 ## Use classes only for state or lifecycle
 
@@ -64,6 +74,8 @@ Before finishing, verify that:
 - related helpers are close to their callers;
 - classes represent real state or lifecycle;
 - names can be understood without knowing internal jargon;
+- required inputs use clear positional arguments and ambiguous values use keywords;
+- docstrings are brief, useful, and absent when the code is already self-explanatory;
 - exceptions explain the failed operation and useful context;
 - comments explain intent or constraints rather than restating code;
 - tests cover the preserved behavior and any intentional change.

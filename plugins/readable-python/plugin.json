@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "readable-python",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A practical coding style for clear, simple, function-driven Python modules.",
   "author": {
     "name": "Surajit Das"
