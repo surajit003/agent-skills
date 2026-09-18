@@ -1,0 +1,4 @@
+interface:
+  display_name: "Readable Python"
+  short_description: "Design Python modules for clarity and simplicity"
+  default_prompt: "Use $readable-python to design or refactor this Python module for clear operational flow and minimal abstraction."

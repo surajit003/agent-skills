@@ -1,0 +1,19 @@
+{
+  "name": "readable-python",
+  "version": "0.1.0",
+  "description": "A practical coding style for clear, simple, function-driven Python modules.",
+  "author": {
+    "name": "Surajit Das"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Readable Python",
+    "shortDescription": "Write clear Python with minimal abstraction.",
+    "longDescription": "Guides Codex to design and refactor Python modules as readable operational flows, using descriptive names, nearby helpers, and classes only when state or lifecycle requires them.",
+    "developerName": "Surajit Das",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://github.com/surajit003/agent-skills/tree/main/plugins/readable-python",
+    "defaultPrompt": "Use $readable-python to design or refactor this Python module for clear operational flow and minimal abstraction."
+  }
+}
